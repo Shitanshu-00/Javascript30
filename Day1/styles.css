@@ -1,0 +1,38 @@
+body{
+margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: no-repeat url('./assets/images/drum-set.jpg') #ccc;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    background-size: cover;
+}
+.key{
+    color:#fff;
+    border: 4px #010 solid ;
+    border-radius: 5px;
+    text-align: center;
+    width: 6vw;
+    padding: 1vw .5vw;
+    transition: all 0.07s;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px #010;
+}
+kbd{
+    display: block;
+    font: 4vh monospace ;
+}
+.sound{
+    font: 2vh monospace;
+    color: #ffc600;
+    text-transform:uppercase;
+}
+.playing{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
