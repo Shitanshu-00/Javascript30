@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+.container{
+    background-image: linear-gradient(#2b5876, #4e4376);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+    height: 25vh;
+    width: 25vh;
+    border: 8px solid #fff;
+    border-radius: 50%;
+}
+.hand{
+    position: absolute;
+    height: 0.5vh;
+    width: 5vw;
+    top: 50%;
+    background-color: #010;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    padding: 2px
+}
