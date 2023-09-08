@@ -1,29 +1,36 @@
 body{
-    margin: 0;
-}
-.container{
-    background-image: linear-gradient(#2b5876, #4e4376);
-    height: 100vh;
-    width: 100vw;
     display: flex;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    flex: 1;
+    min-height: 100vh;
+    margin:0;
     align-items: center;
     justify-content: center;
 }
 .clock{
-    height: 25vh;
-    width: 25vh;
-    border: 8px solid #fff;
+    height: 30vh;
+    width: 30vh;
+    border: 20px double #fff;
     border-radius: 50%;
+    position: relative;
+    padding: 2vh;
+}
+.clock-face{
+    position: inherit;
+    width: 100%;
+    height: 100%;
 }
 .hand{
-    position: absolute;
+    width: 50%;
     height: 0.5vh;
-    width: 5vw;
-    top: 50%;
     background-color: #010;
+    position: absolute;
+    top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-    padding: 2px
+    transition-timing-function:cubic-bezier(0.1, 2.7, 0.5, 1);
+}
+.hour-hand{
+    background-color: #fff;
 }
