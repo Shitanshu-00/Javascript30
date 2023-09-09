@@ -1,5 +1,5 @@
 
-# Drum-Kit
+# Javascript30
 
 This repository contains a number of projects which I have developed during my JavaScript30 sessions.
 
