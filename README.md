@@ -33,7 +33,7 @@ Start the server using Live Server (in VS Code) or run index.html file :
 
 
 ## 🚀 About Me
-I'm a React Native developer...
+I'm a beginner level React Native developer from India
 
 
 ## 🔗 Links
