@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 .h1{
     font-size: 40px;
     color: red;
 }
-=======
+
 :root{
     --spacing: 10px;
     --blur: 10px;
@@ -34,4 +34,3 @@ img{
     filter: blur(var(--blur));
     background: var(--base);
 }
->>>>>>> 28e94d6 (CSS variable)
