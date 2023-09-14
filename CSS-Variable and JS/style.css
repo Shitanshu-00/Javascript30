@@ -1,7 +1,9 @@
+
 .h1{
     font-size: 40px;
     color: red;
 }
+
 :root{
     --spacing: 10px;
     --blur: 10px;
