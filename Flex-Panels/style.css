@@ -1,3 +1,99 @@
-h1{
-    color: #ff0000;
+html {
+    box-sizing: border-box;
+    background: #00ff00;
+    font-family: 'Courier New';
+}
+
+body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.panels {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #680F9C;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    font-size: 3.6vh;
+    transition:
+        font-size 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+        flex 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+        background 0.2s;
+}
+
+.panel1 {
+    background-image: url('https://images.unsplash.com/photo-1535525153412-5a42439a210d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFuY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.panel2 {
+    background-image: url('https://images.unsplash.com/photo-1505455184862-554165e5f6ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z2l2ZSUyMGFuZCUyMHRha2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.panel3 {
+    background-image: url('https://images.unsplash.com/photo-1682687220363-35e4621ed990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.panel4 {
+    background-image: url('https://plus.unsplash.com/premium_photo-1683734676292-2e621c25be71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG9kYXl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.panel5 {
+    background-image: url('https://images.unsplash.com/photo-1500408698778-2afa347782f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYWlscyUyMG9mJTIwbGlnaHR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.panel>* {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel>*:first-child {
+    transform: translateY(-100%)
+}
+
+.panel.open-active>*:first-child {
+    transform: translateY(0);
+}
+
+.panel>*:last-child {
+    transform: translateY(100%);
+}
+
+.panel.open-active>*:last-child {
+    transform: translateY(0);
+}
+
+.panel p{
+    text-transform: uppercase;
+}
+
+.panel p:nth-child(2){
+    font-size: 4vh;
+    font-weight: bolder;
+    color: #8cbe2f
+}
+
+.panel.open{
+    flex: 5;
 }
