@@ -10,7 +10,7 @@ fetch(endpoint)
   .then((blob) => blob.json())
   .then((data) => cities.push(...data));
 
-function findMatches(word, cities) {
+ findMatches=(word, cities)=>{
   return cities.filter((place) => {
     const regex = new RegExp(word, "gi"); //to match the searched word globally (insensitive)
     return place.city.match(regex) || place.state.match(regex);
