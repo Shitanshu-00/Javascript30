@@ -3,3 +3,5 @@ const makeGreen=()=>{
    p.style.color = '#00aa00';
    p.style.fontSize = '50px';
 }
+
+console.log("Dev Tools");
