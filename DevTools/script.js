@@ -1,3 +1,4 @@
+
 const dogs = [
   { name: "Snickers", age: 2 },
   { name: "Hugo", age: 8 },
