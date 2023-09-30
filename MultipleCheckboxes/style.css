@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background: linear-gradient(to right, #fdc830, #f37335);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inbox {
+    background: #fff;
+    width: 25%;
+    flex-direction: column;
+    padding: 2vw;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #010;
+}
+.item:last-child{
+    border-bottom: 0;
+}
+.item p{
+    font-family: poppins;
+    font-size: 2vh;
+    margin-left: 1vw;
+}
+
+input:checked + p{
+    text-decoration: line-through;
+}
