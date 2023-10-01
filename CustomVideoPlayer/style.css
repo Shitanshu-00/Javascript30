@@ -1,0 +1,8 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
