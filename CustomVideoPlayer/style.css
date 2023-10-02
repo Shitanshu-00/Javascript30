@@ -5,4 +5,10 @@ body{
     display: flex;
     height: 100vh;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    align-items: center;
+    justify-content: center;
+}
+.viewer{
+    height: 40vh;
+    width: 30vw;
 }
